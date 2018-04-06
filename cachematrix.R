@@ -30,4 +30,7 @@ cachemean <- function(x, ...) {
   m <- mean(data, ...)
   x$setmean(m)
   m
+  inv <- solve(data)
+  x$setinverse(inv)
+  inv
 }
